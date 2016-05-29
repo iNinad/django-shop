@@ -1,0 +1,19 @@
+<!--DOCTYPE HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to our store</title>
+</head>
+<body>
+<h1>Template is working!</h1>
+{% for object in objects %}
+<br>
+{{object.id}}
+<br>
+<a href= '{{ object.get_absolute_url }}' >{{object.title}}</a>
+<br>
+{{object.description}}
+<br>
+{% endfor %}
+</body>
+</html>
