@@ -1,0 +1,13 @@
+<!--DOCTYPE HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to our store</title>
+</head>
+<body>
+<form method="POST"> {% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Save">
+</form>
+</body>
+</html>
